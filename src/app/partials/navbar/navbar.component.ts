@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router:Router,private authservice:AuthService) { }
+  constructor(private router:Router,public authservice:AuthService) { }
 
   ngOnInit(): void {
   }
@@ -20,4 +20,6 @@ export class NavbarComponent implements OnInit {
 
 
   }
+
+ 
 }

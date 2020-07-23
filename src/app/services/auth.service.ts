@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   private users=[
-    {username:'admin',password:'1234',roles:['ADMIN','USER']},
+    {username:'admin@mistral.fr',password:'1234',roles:['ADMIN','USER']},
     {username:'user1',password:'1234',roles:['USER']},
     {username:'user2',password:'1234',roles:['USER']},
 
@@ -65,4 +65,15 @@ public loadAuthenticatedUserFromLocalStorage(){
    }
      
 }
+
+public isAuth(){
+
+  if(this.userAuthenticated){
+    
+      return true;
+
+    }
+    return false;
+  }
 }
+
